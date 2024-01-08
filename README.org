@@ -1,0 +1,19 @@
+* Fetch Health Check
+
+Prerequisite:
+- python 3+ installed
+
+This script accepts a single YAML file ~test.yaml~ by default, but can
+be overridden using either the ~--filename~ or ~-f~ parameter. e.g.:
+~python main.py --filename file.yaml~.
+
+Here is an example run:
+
+#+begin_example
+pip install -r requirements.txt
+python main.py
+INFO:root:http://localhost:4000/ has 0.0% availability percentage
+INFO:root:http://localhost:4000/careers has 0.0% availability percentage
+INFO:root:http://localhost:4000/some/post/endpoint has 0.0% availability percentage
+INFO:root:http://localhost:4000/ has 0.0% availability percentage
+#+end_example
